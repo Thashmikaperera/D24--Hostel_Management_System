@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #1D7874;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.LoadingFormController">
+   <children>
+      <ImageView fitHeight="263.0" fitWidth="292.0" layoutX="20.0" layoutY="68.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/loading%20page.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="321.0" layoutY="86.0" text="D24" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="151.0" text="Hostel" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="207.0" text="Management " textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="318.0" layoutY="265.0" text="System" textFill="WHITE">
+         <font>
+            <Font name="SansSerif Bold" size="40.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="prgBar" layoutX="46.0" layoutY="374.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="8.0" prefWidth="518.0" progress="0.0" />
+   </children>
+</AnchorPane>

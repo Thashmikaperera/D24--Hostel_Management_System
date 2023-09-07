@@ -1,0 +1,11 @@
+#btnRegister {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,   #3CAEA3, #93B1A6);
+}
+
+#btnRegister:hover {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,   #3CAEA3, #5C8374);
+}
+
+#btnRegister:pressed {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,   #3CAEA3, #183D3D);
+}

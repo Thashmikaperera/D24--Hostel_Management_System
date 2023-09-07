@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1054.0" style="-fx-background-color: #1D7874;" stylesheets="@../style/reservationFormStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ReservationFormController">
+   <children>
+      <Label fx:id="lblMain" layoutX="312.0" layoutY="24.0" text="RESERVATION MANAGE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="30.0" layoutY="111.0" prefHeight="257.0" prefWidth="967.0" style="-fx-background-color: #3CAEA3; -fx-background-radius: 20;">
+         <children>
+            <Label layoutX="48.0" layoutY="28.0" text="Reservation ID :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font></Label>
+            <TextField layoutX="241.0" layoutY="32.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="48.0" layoutY="84.0" text="Student ID :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="241.0" layoutY="90.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="48.0" layoutY="144.0" text="Room Type :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="241.0" layoutY="150.0" prefHeight="26.0" prefWidth="206.0" />
+            <JFXButton fx:id="btnSave" layoutX="750.0" layoutY="205.0" onAction="#btnSaveOnAction" prefHeight="33.0" prefWidth="67.0" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="507.0" layoutY="28.0" text="Available qty :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="700.0" layoutY="32.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="507.0" layoutY="84.0" text="Booking Date :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="700.0" layoutY="91.0" prefHeight="26.0" prefWidth="206.0" />
+            <Label layoutX="507.0" layoutY="144.0" text="Price per Room :-" textFill="#e1e0e0">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <TextField layoutX="700.0" layoutY="149.0" prefHeight="26.0" prefWidth="206.0" />
+            <JFXButton fx:id="btnDelete" layoutX="838.0" layoutY="205.0" onAction="#btnDeleteOnAction" prefHeight="33.0" prefWidth="67.0" text="Delete" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+      <TableView layoutX="119.0" layoutY="411.0" prefHeight="270.0" prefWidth="800.0">
+        <columns>
+          <TableColumn prefWidth="105.33332824707031" text="R-ID" />
+          <TableColumn prefWidth="115.33331298828125" text="S-ID" />
+            <TableColumn prefWidth="146.66668701171875" text="R-Type" />
+            <TableColumn prefWidth="121.33331298828125" text="qty" />
+            <TableColumn prefWidth="177.6666259765625" text="Booking Date" />
+            <TableColumn prefWidth="141.33331298828125" text="Price" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

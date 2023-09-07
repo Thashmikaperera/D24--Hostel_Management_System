@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="700.0" prefWidth="1054.0" style="-fx-background-color: #1D7874;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#3caea3" height="702.0" layoutX="-2.0" stroke="#1d7874" strokeType="INSIDE" width="598.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="248.0" layoutX="494.0" layoutY="75.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="199.0" />
+      <Label layoutX="35.0" layoutY="51.0" prefHeight="65.0" prefWidth="408.0" text="Welcome to D24" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="36.0" layoutY="116.0" prefHeight="65.0" prefWidth="470.0" text="Hostel Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="181.0" prefHeight="65.0" prefWidth="470.0" text="System" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="44.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="289.0" prefHeight="30.0" prefWidth="397.0" text="However,the code you're provided has" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="320.0" prefHeight="30.0" prefWidth="397.0" text="a couple of issues:" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <BarChart layoutX="33.0" layoutY="412.0" prefHeight="244.0" prefWidth="336.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </BarChart>
+      <Label layoutX="58.0" layoutY="375.0" text="Money" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="30.0" fill="#3caea3" height="40.0" layoutX="397.0" layoutY="367.0" stroke="WHITE" strokeType="INSIDE" width="121.0" />
+      <Label layoutX="425.0" layoutY="371.0" prefHeight="28.0" prefWidth="73.0" text="August" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#175e17" height="20.0" layoutX="395.0" layoutY="456.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="RED" height="20.0" layoutX="395.0" layoutY="505.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="20.0" layoutX="395.0" layoutY="555.0" stroke="BLACK" strokeType="INSIDE" width="22.0" />
+      <Label layoutX="435.0" layoutY="449.0" prefHeight="28.0" prefWidth="73.0" text="couple" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="551.0" prefHeight="28.0" prefWidth="73.0" text="Banana" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="496.0" prefHeight="28.0" prefWidth="73.0" text="Apple" textFill="WHITE">
+         <font>
+            <Font size="19.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="248.0" layoutX="753.0" layoutY="75.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="199.0" />
+      <Label layoutX="633.0" layoutY="365.0" text="August 2023" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="21.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="633.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="699.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="765.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="831.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="899.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="965.0" layoutY="417.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="45.0" />
+      <Label layoutX="645.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="1" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="712.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="2" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="777.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="3" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="843.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="4" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="911.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="5" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Label layoutX="977.0" layoutY="424.0" prefHeight="30.0" prefWidth="22.0" text="6" textFill="#1d7874">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="675.0" layoutY="526.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="59.0" />
+      <Rectangle arcHeight="20.0" arcWidth="20.0" fill="WHITE" height="62.0" layoutX="675.0" layoutY="607.0" opacity="0.73" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="59.0" />
+      <Label layoutX="756.0" layoutY="542.0" text="Available Rooms" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="946.0" layoutY="542.0" text="23" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="756.0" layoutY="625.0" text="Total Rooms" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="946.0" layoutY="626.0" text="23" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="124.0" fitWidth="142.0" layoutX="785.0" layoutY="117.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-sun-50.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="557.0" layoutY="255.0" text="Progress">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="830.0" layoutY="245.0" prefHeight="47.0" prefWidth="59.0" text="23" textFill="#1d7874">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="71.0" fitWidth="61.0" layoutX="673.0" layoutY="528.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-sun-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="62.0" fitWidth="62.0" layoutX="674.0" layoutY="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-sun-50.png" />
+         </image>
+      </ImageView>
+      <PieChart layoutX="493.0" layoutY="93.0" prefHeight="156.0" prefWidth="159.0" />
+   </children>
+</AnchorPane>
