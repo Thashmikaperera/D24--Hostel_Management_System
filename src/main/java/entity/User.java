@@ -20,6 +20,7 @@ public class User {
     @Id
     private String userId;
     private String userName;
+    private String address;
     private String userPassword;
     private String userPasswordHint;
     private String userEmail;

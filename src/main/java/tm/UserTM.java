@@ -1,4 +1,4 @@
-package dto;
+package tm;
 
 import lombok.*;
 
@@ -7,12 +7,11 @@ import lombok.*;
 @Setter
 @Getter
 @ToString
-
-public class UserDTO {
+public class UserTM {
     private String userId;
     private String userName;
-    private String address;
     private String userEmail;
+    private String userAddress;
     private String userPassword;
     private String userPasswordHint;
 }

@@ -7,7 +7,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
 <AnchorPane prefHeight="503.0" prefWidth="290.0" style="-fx-background-color: #1D7874;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.registerFormController">
    <children>
       <Label layoutX="61.0" layoutY="19.0" text="Register as a User" textFill="WHITE">
@@ -15,36 +14,41 @@
             <Font name="System Bold" size="22.0" />
          </font>
       </Label>
-      <JFXTextField fx:id="userId" focusColor="#e1e0e0" layoutX="50.0" layoutY="82.0" onAction="#userIdOnAction" prefHeight="25.0" prefWidth="199.0" promptText="UserId" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXTextField fx:id="userId" focusColor="#e1e0e0" layoutX="50.0" layoutY="62.0" onAction="#userIdOnAction" prefHeight="25.0" prefWidth="199.0" promptText="UserId" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="userNameId" focusColor="#e1e0e0" layoutX="51.0" layoutY="142.0" onAction="#userNameOnAction" prefHeight="25.0" prefWidth="199.0" promptText="UserName" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXTextField fx:id="userNameId" focusColor="#e1e0e0" layoutX="51.0" layoutY="122.0" onAction="#userNameOnAction" prefHeight="25.0" prefWidth="199.0" promptText="UserName" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXTextField fx:id="emailId" focusColor="#e1e0e0" layoutX="51.0" layoutY="201.0" onAction="#emailOnAction" prefHeight="25.0" prefWidth="199.0" promptText="Email" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXTextField fx:id="emailId" focusColor="#e1e0e0" layoutX="51.0" layoutY="241.0" onAction="#emailOnAction" prefHeight="25.0" prefWidth="199.0" promptText="Email" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
-      <JFXPasswordField fx:id="passwordId" focusColor="#e1e0e0" layoutX="50.0" layoutY="261.0" onAction="#passwordOnAction" prefHeight="38.0" prefWidth="199.0" promptText="Password" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXPasswordField fx:id="passwordId" focusColor="#e1e0e0" layoutX="50.0" layoutY="291.0" onAction="#passwordOnAction" prefHeight="38.0" prefWidth="199.0" promptText="Password" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXPasswordField>
-      <JFXPasswordField focusColor="#e1e0e0" layoutX="50.0" layoutY="323.0" prefHeight="38.0" prefWidth="199.0" promptText="Repeat-Password" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXPasswordField focusColor="#e1e0e0" layoutX="50.0" layoutY="343.0" prefHeight="38.0" prefWidth="199.0" promptText="Repeat-Password" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXPasswordField>
-      <JFXTextField fx:id="passwordHintId" focusColor="#e1e0e0" layoutX="51.0" layoutY="387.0" onAction="#passwordHintOnAction" prefHeight="25.0" prefWidth="199.0" promptText="Password Hint" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+      <JFXTextField fx:id="passwordHintId" focusColor="#e1e0e0" layoutX="51.0" layoutY="397.0" onAction="#passwordHintOnAction" prefHeight="25.0" prefWidth="199.0" promptText="Password Hint" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
          <font>
             <Font size="17.0" />
          </font>
       </JFXTextField>
       <JFXButton fx:id="btnRegister" layoutX="190.0" layoutY="450.0" onAction="#btnRegisterOnAction" stylesheets="@../style/registerFormStyle.css" text="Register" />
+      <JFXTextField fx:id="userAddress" focusColor="#e1e0e0" layoutX="51.0" layoutY="182.0" onAction="#userAddressOnAction" prefHeight="25.0" prefWidth="199.0" promptText="UserAddress" style="-fx-prompt-text-fill: #e1e0e0;" unFocusColor="#e1e0e0">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </JFXTextField>
    </children>
 </AnchorPane>

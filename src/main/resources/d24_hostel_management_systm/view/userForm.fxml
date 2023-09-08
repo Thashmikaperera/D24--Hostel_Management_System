@@ -54,7 +54,7 @@
             <TextField fx:id="txtHint" layoutX="641.0" layoutY="166.0" onAction="#txtHintOnAction" prefHeight="39.0" prefWidth="243.0" />
          </children>
       </AnchorPane>
-      <TableView fx:id="tblUser" layoutX="64.0" layoutY="407.0" prefHeight="263.0" prefWidth="932.0">
+      <TableView fx:id="tblUser" layoutX="64.0" layoutY="407.0" onMouseClicked="#tblUserOnMouseClicked" prefHeight="263.0" prefWidth="932.0">
         <columns>
           <TableColumn fx:id="colUserId" prefWidth="98.66665649414062" text="User ID" />
           <TableColumn fx:id="colName" prefWidth="136.33334350585938" text="User Name" />

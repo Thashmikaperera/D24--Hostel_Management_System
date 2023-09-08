@@ -15,6 +15,9 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class registerFormController implements Initializable {
+
+    @FXML
+    private JFXTextField userAddress;
     @FXML
     private JFXTextField userId;
 
@@ -34,16 +37,21 @@ public class registerFormController implements Initializable {
     private JFXButton btnRegister;
 
     UserBO userBO= (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
+    @FXML
+    void userAddressOnAction(ActionEvent event) {
+
+    }
 
     @FXML
     void btnRegisterOnAction(ActionEvent event) {
         String id = userId.getText();
         String name = userNameId.getText();
+        String address = userAddress.getText();
         String email = emailId.getText();
         String password=passwordId.getText();
         String hint= passwordHintId.getText();
 
-        UserDTO userDTO=new UserDTO(id,name,email,password,hint);
+        UserDTO userDTO=new UserDTO(id,name,address ,email,password,hint);
         boolean isSaved= userBO.saveUser(userDTO);
 
         if (isSaved){
