@@ -11,6 +11,8 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
+import tm.RoomTM;
 import tm.UserTM;
 
 import java.net.URL;
@@ -68,7 +70,16 @@ public class UserFormController implements Initializable {
 
     @FXML
     void btnDeleteOnAction(ActionEvent event) {
-        
+        UserTM selectedItem = tblUser.getSelectionModel().getSelectedItem();
+        if (selectedItem != null){
+            boolean isDeleted = userBO.deleteUser(selectedItem.getUserId());
+            if (isDeleted) {
+                new Alert(Alert.AlertType.CONFIRMATION, "User deleted!...").show();
+                getAll();
+            } else {
+                new Alert(Alert.AlertType.ERROR, "User not deleted   !...").show();
+            }
+        }
     }
 
     UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
@@ -90,7 +101,25 @@ public class UserFormController implements Initializable {
             }else {
                 new Alert(Alert.AlertType.ERROR, "User not saved!...").show();
             }
+        }else if (btnSave.getText().equals("Update")){
+            boolean isUpdate = userBO.updateUser(userDTO);
+            if (isUpdate){
+                new Alert(Alert.AlertType.CONFIRMATION,"Room Updated!").show();
+                getAll();
+                clearAll();
+            }else {
+                new Alert(Alert.AlertType.ERROR,"Room not Updated!").show();
+            }
         }
+    }
+
+    private void clearAll() {
+        txtUserId.clear();
+        txtUserName.clear();
+        txtPassword.clear();
+        txtHint.clear();
+        txtEmail.clear();
+        txtAddress.clear();
     }
 
     private void getAll() {
@@ -149,5 +178,25 @@ public class UserFormController implements Initializable {
         colPassword.setCellValueFactory(new PropertyValueFactory<>("userPassword"));
         colHint.setCellValueFactory(new PropertyValueFactory<>("userPasswordHint"));
 
+    }
+
+    public void tblUserOnMouseClicked(MouseEvent mouseEvent) {
+        UserTM selectedItem = (UserTM) tblUser.getSelectionModel().getSelectedItem();
+        try {
+            if (selectedItem != null) {
+                btnDelete.setDisable(false);
+                txtUserId.setText(selectedItem.getUserId());
+                txtUserName.setText(selectedItem.getUserName());
+                txtEmail.setText(selectedItem.getUserEmail());
+                txtAddress.setText(selectedItem.getUserAddress());
+                txtPassword.setText(selectedItem.getUserPassword());
+                txtHint.setText(selectedItem.getUserPasswordHint());
+                btnSave.setText("Update");
+                btnSave.setStyle("-fx-background-color: #1A5D1A");
+            }
+
+        } catch (RuntimeException e) {
+            new Alert(Alert.AlertType.ERROR, e.getMessage()).show();
+        }
     }
 }

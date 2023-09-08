@@ -38,4 +38,16 @@ public class UserBOImpl implements UserBO {
         }
         return userDTOArrayList;
     }
+
+    @Override
+    public boolean updateUser(UserDTO userDTO) {
+        return userDAO.update(new User(userDTO.getUserId(), userDTO.getUserName(), userDTO.getAddress(), userDTO.getUserPassword(), userDTO.getUserPasswordHint(),  userDTO.getUserEmail()));
+    }
+
+    @Override
+    public boolean deleteUser(String userId) {
+        User user = new User();
+        user.setUserId(userId);
+        return userDAO.delete(user);
+    }
 }

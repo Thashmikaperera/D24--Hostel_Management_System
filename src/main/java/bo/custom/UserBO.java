@@ -14,4 +14,8 @@ public interface UserBO extends SuperBO {
     String generateNextUserId();
 
     List<UserDTO> getAllUsers();
+
+    boolean updateUser(UserDTO userDTO);
+
+    boolean deleteUser(String userId);
 }
