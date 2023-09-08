@@ -20,6 +20,17 @@
 #btnSave:pressed {
     -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,  #1D7874, #183D3D);
 }
+#btnUpdate {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,  #1D7874, #93B1A6);
+}
+
+#btnUpdate:hover {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,  #1D7874, #5C8374);
+}
+
+#btnUpdate:pressed {
+    -fx-background-color: linear-gradient(from 82% 90% to 90% 90%,  #1D7874, #183D3D);
+}
 .table-view{
     -fx-background-color: rgba(0, 0, 0, 0.24);
     -fx-border-radius: 2;

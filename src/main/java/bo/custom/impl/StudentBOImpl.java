@@ -36,11 +36,11 @@ public class StudentBOImpl implements StudentBO {
 
     @Override
     public List<StudentDTO> getAllStudent() {
-        List<StudentDTO> customerDTOArrayList = new ArrayList<>();
-        List<Student> customerArrayList = studentDAO.getAll();
-        for (Student student:customerArrayList) {
-            customerDTOArrayList.add(new StudentDTO(student.getStudentId(),student.getStudentName(), student.getStudentAddress(), student.getStudentContact(),student.getDate(),student.getGender()));
+        List<StudentDTO> studentDTOArrayList = new ArrayList<>();
+        List<Student> studentArrayList = studentDAO.getAll();
+        for (Student student:studentArrayList) {
+            studentDTOArrayList.add(new StudentDTO(student.getStudentId(),student.getStudentName(), student.getStudentAddress(), student.getStudentContact(),student.getDate(),student.getGender()));
         }
-        return customerDTOArrayList;
+        return studentDTOArrayList;
     }
 }

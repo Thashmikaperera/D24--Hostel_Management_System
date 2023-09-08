@@ -180,6 +180,7 @@ public class StudentFormController implements Initializable {
     public void initialize(URL url, ResourceBundle resourceBundle) {
         getAll();
         generateNextId();
+
         setCellValueFactory();
     }
 

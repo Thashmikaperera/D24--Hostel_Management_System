@@ -1,4 +1,4 @@
-package dto;
+package tm;
 
 import lombok.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @Getter
 @ToString
-public class RoomDTO {
+public class RoomTM {
     private String roomId;
     private String roomType;
     private Double keyMoney;
